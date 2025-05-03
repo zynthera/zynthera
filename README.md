@@ -30,7 +30,8 @@
 → Penetration Testing      → Bug Hunting
 → Malware/Virus Dev        → Threat Automation
 → Crypto/Forex Trading     → High-Stakes Business
-→ No Indian Trade (Tax Scams)
+→ No Indian Trade (Tax Scams)```
+
 
 ### 🚨 Notice
 This portfolio contains no sensitive or illegal source code.
