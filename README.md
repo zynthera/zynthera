@@ -1,6 +1,6 @@
 <!-- 🔥 Hacker 3D Banner -->
 <p align="center">
-  <img src="https://github.com/zynthera/zynthera/raw/main/assets/banner.png" alt="Zynthera Banner" width="100%" />
+  <img src="https://github.com/zynthera/zynthera/public/favicon.ico" alt="Zynthera Banner" width="100%" />
 </p>
 
 <h1 align="center">🚀 I’m not special. I’m <i>limited edition</i>.</h1>
@@ -45,8 +45,8 @@ I’m **Zynthera** (aka [@xploit.ninja](https://instagram.com/xploit.ninja)) —
 | Stack Area        | Tools / Frameworks |
 |-------------------|--------------------|
 | UI/Frontend       | Next.js, Tailwind, AnimeJS, LensJS, BarbaJS |
-| Backend           | Supabase, Node.js, REST/Socket API |
-| Malware/Automation| Java, Python, Obfuscators, Shell loaders |
+| Backend           | Supabase, Rust, REST/Socket API |
+| Malware/Automation| Python, Obfuscators, Shell loaders |
 | Trading           | Binance API, TradingView, custom bots |
 | Devices           | Full resolution/device support (phones, terminals, 4K) |
 
@@ -54,7 +54,7 @@ I’m **Zynthera** (aka [@xploit.ninja](https://instagram.com/xploit.ninja)) —
 
 ## 🔐 Security System
 
-- ✅ Java-based backend guards
+- ✅ Rust-based backend guards
 - ✅ Anti-copy script (copies show 😈 warning)
 - ✅ Obfuscated fonts and scripts
 - ✅ Auto-music playback (encrypted `.mp3`)
