@@ -1,6 +1,6 @@
-<!-- 🔥 Hacker 3D Banner -->
+<!-- Dynamic SVG Banner -->
 <p align="center">
-  <img src="https://github.com/zynthera/zynthera/public/favicon.ico" alt="Zynthera Banner" width="100%" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&pause=1000&color=00FF00&width=435&lines=Welcome+to+Zynthera's+World;Hacker+%7C+Trader+%7C+Entrepreneur" alt="Typing SVG" />
 </p>
 
 <h1 align="center">🚀 I’m not special. I’m <i>limited edition</i>.</h1>
