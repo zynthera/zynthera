@@ -1,113 +1,93 @@
+<!-- 🔥 Hacker 3D Banner -->
+<p align="center">
+  <img src="https://github.com/zynthera/zynthera/raw/main/assets/banner.png" alt="Zynthera Banner" width="100%" />
+</p>
 
+<h1 align="center">🚀 I’m not special. I’m <i>limited edition</i>.</h1>
+<h3 align="center">🕶️ 𝑯𝒂𝒄𝒌𝒆𝒓 | 💼 𝑬𝒏𝒕𝒓𝒆𝒑𝒓𝒆𝒏𝒆𝒖𝒓 | 📈 𝑻𝒓𝒂𝒅𝒆𝒓</h3>
 
-🚀 I’m not special. I’m limited edition.
+---
 
-𝑯𝒂𝒄𝒌𝒆𝒓 | 𝑬𝒏𝒕𝒓𝒆𝒑𝒓𝒆𝒏𝒆𝒖𝒓 | 𝑻𝒓𝒂𝒅𝒆𝒓
+## 🔥 About Zynthera
 
+I’m **Zynthera** (aka [@xploit.ninja](https://instagram.com/xploit.ninja)) — a shadow operative fusing **code**, **markets**, and **cyber warfare** into unstoppable motion.
 
+> I move through systems like smoke — unseen, unstoppable.
 
-🔥 About Zynthera
+---
 
-I’m Zynthera (aka @Xploit.ninja), a shadow operative mastering the art of code, markets, and strategy. I navigate the digital underworld, exploiting systems and seizing opportunities while remaining unseen.
+## 🧠 Core Domains
 
+| Area        | Description |
+|-------------|-------------|
+| 🧠 Hacking   | Penetration testing, exploit engineering, automation |
+| 💻 DevOps    | Secure systems, stealth tools, full-stack control |
+| ⚙️ Trading   | Crypto & foreign market domination, algo-based bots |
+| 🔐 Security  | Anti-forensics, payload cloaking, thread mutation |
+| 🧨 Ops       | Business execution, private systems, anonymous layer |
 
+---
 
+## 🧬 Philosophy
 
+```txt
+🧠 Mindset:  No limits.
+👁️ Vision:   Billionaire mission.
+🎯 Purpose:  Create. Lead. Impact.
+💸 Focus:    Profit. Power. Persistence.
+🔥 Spirit:   Unstoppable.
+```
 
-🧠 Hacking: Elite in penetration testing, bug bounties, and stealth automation.
+---
 
+## 🧩 Tech Stack & Tools
 
+| Stack Area        | Tools / Frameworks |
+|-------------------|--------------------|
+| UI/Frontend       | Next.js, Tailwind, AnimeJS, LensJS, BarbaJS |
+| Backend           | Supabase, Node.js, REST/Socket API |
+| Malware/Automation| Java, Python, Obfuscators, Shell loaders |
+| Trading           | Binance API, TradingView, custom bots |
+| Devices           | Full resolution/device support (phones, terminals, 4K) |
 
-💻 Development: Crafting secure, high-impact systems.
+---
 
+## 🔐 Security System
 
+- ✅ Java-based backend guards
+- ✅ Anti-copy script (copies show 😈 warning)
+- ✅ Obfuscated fonts and scripts
+- ✅ Auto-music playback (encrypted `.mp3`)
+- ✅ Device-adaptive UI
 
-⚙️ Trading: Dominating crypto and forex markets.
+---
 
+## 🌐 Network Presence
 
+| Platform     | Handle |
+|--------------|--------|
+| 🧠 GitHub     | [@zynthera](https://github.com/zynthera) |
+| 📸 Instagram  | [@xploit.ninja](https://instagram.com/xploit.ninja) |
+| 📡 Telegram   | *(Coming Soon)* |
+| 🎥 YouTube    | *(Coming Soon)* |
 
-🧨 Focus: Cybersecurity, business dominance, and private operations.
+---
 
+## 📊 GitHub Stats
 
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=zynthera&theme=tokyonight&show_icons=true" width="48%" />
+  <img src="https://github-readme-streak-stats.herokuapp.com?user=zynthera&theme=tokyonight" width="48%" />
+</p>
 
-🧠 Philosophy
+<p align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=zynthera&theme=matrix&no-bg=true&margin-w=15" />
+</p>
 
-Mindset:  No limits.
-Vision:   Billionaire mission.
-Purpose:  Create. Lead. Impact.
-Focus:    Profit. Power. Persistence.
-Spirit:   Unstoppable.
+---
 
+## 💬 Final Quote
 
+> “This isn’t just code. This is war strategy in motion.”  
+> — **Zynthera** 😈
 
-🧩 Tech Arsenal
-
-
-
-
-
-Advanced PenTesting & Red Team
-
-
-
-Bug Bounty, Payload, & Automation
-
-
-
-Malware/Virus Dev, custom threads, obfuscation
-
-
-
-Crypto & Foreign Trading domination
-
-
-
-🔐 Security Notice
-
-
-
-
-
-Full front-end protection enabled
-
-
-
-Anti-copy + content guard active
-
-
-
-Java-based protections added
-
-
-
-Auto-play music (MP3,MP4,MP9 hosted via transparency and illegal based)
-
-
-Supabase DB integrated
-
-
-
-Full device/resolution compatibility: phones, desktops, terminals
-
-
-
-📡 Network Presence
-
-
-
-
-
-📊 Stats & Trophies
-
-
-
-
-
-
-
-🧬 Final Note
-
-
-
-“This isn’t just code. This is war strategy in motion.”
-— Zynthera
