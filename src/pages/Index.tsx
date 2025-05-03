@@ -35,35 +35,42 @@ const Index = () => {
     });
 
     // Apply lens distortion effect to images and cards
-    if (window.lens) {
-      setTimeout(() => {
+    const initLensEffect = () => {
+      if (typeof window.lens !== 'undefined') {
         const lensElements = document.querySelectorAll('.lens-effect');
         lensElements.forEach(el => {
-          window.lens.init(el, {
-            radius: 80,
-            intensity: 0.25,
-            speedIn: 0.8,
-            speedOut: 0.8
-          });
+          if (el instanceof HTMLElement) {
+            window.lens?.init(el, {
+              radius: 80,
+              intensity: 0.25,
+              speedIn: 0.8,
+              speedOut: 0.8
+            });
+          }
         });
-      }, 1000);
-    } else {
-      // Dynamically load lens.js if not available
+      }
+    };
+
+    // Load lens.js dynamically
+    const loadLensScript = () => {
       const script = document.createElement('script');
       script.src = 'https://unpkg.com/lens.js@latest/dist/lens.umd.js';
       script.async = true;
       script.onload = () => {
-        const lensElements = document.querySelectorAll('.lens-effect');
-        lensElements.forEach(el => {
-          window.lens.init(el, {
-            radius: 80,
-            intensity: 0.25,
-            speedIn: 0.8,
-            speedOut: 0.8
-          });
-        });
+        // Wait a bit for the script to initialize
+        setTimeout(initLensEffect, 300);
+      };
+      script.onerror = (error) => {
+        console.error("Failed to load lens.js:", error);
       };
       document.body.appendChild(script);
+    };
+
+    // Check if lens.js is already loaded
+    if (typeof window.lens !== 'undefined') {
+      initLensEffect();
+    } else {
+      loadLensScript();
     }
 
     // We'll initialize barba.js only if we have the required wrapper
