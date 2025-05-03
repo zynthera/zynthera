@@ -80,8 +80,7 @@ Java-based protections added
 
 
 
-Auto-play music (MP3 hosted via Lovable.dev)
-
+Auto-play music (MP3,MP4,MP9 hosted via transparency and illegal based)
 
 
 Supabase DB integrated
