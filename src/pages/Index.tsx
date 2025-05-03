@@ -7,6 +7,7 @@ import { HeroSection } from '@/components/HeroSection';
 import { TimelineSection } from '@/components/TimelineSection';
 import { SkillsSection } from '@/components/SkillsSection';
 import { FooterSection } from '@/components/FooterSection';
+import { AudioPlayer } from '@/components/AudioPlayer';
 
 const Index = () => {
   const pageRef = useRef<HTMLDivElement>(null);
@@ -166,6 +167,9 @@ const Index = () => {
         
         <FooterSection />
       </div>
+
+      {/* Audio player with play/pause toggle */}
+      <AudioPlayer />
     </div>
   );
 };
