@@ -1,34 +1,114 @@
-<!-- Banner (optional: custom host or use image generator) -->
-<p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=22&pause=100&color=00FF00&center=true&vCenter=true&multiline=true&width=600&height=80&lines=🚀+I’m+not+stopping.+I’m+just+getting+started.">
-</p>
 
-<h1 align="center" style="font-family: JetBrains Mono;">
-  😈 Hey, I'm Zynthera
-</h1>
-<h3 align="center">Hacker | Trader | Entrepreneur</h3>
 
----
+🚀 I’m not special. I’m limited edition.
 
-### 🧠 Mindset & Mission
-- **Mindset**: No limits.
-- **Vision**: Billionaire mission.
-- **Purpose**: Create. Lead. Impact.
-- **Focus**: Profit. Power. Persistence.
-- **Spirit**: Unstoppable.
+𝑯𝒂𝒄𝒌𝒆𝒓 | 𝑬𝒏𝒕𝒓𝒆𝒑𝒓𝒆𝒏𝒆𝒖𝒓 | 𝑻𝒓𝒂𝒅𝒆𝒓
 
----
 
-### 📍 Timeline
-- 🧠 Started Trading — 2023  
-- 🕶️ Started Hacking — 2024  
-- ⚡ Full Stack Advanced — 2025+  
 
----
+🔥 About Zynthera
 
-### 🛠️ Core Skills
-```text
-→ Penetration Testing      → Bug Hunting
-→ Malware/Virus Dev        → Threat Automation
-→ Crypto/Forex Trading     → High-Stakes Business
-→ No Indian Trade (Tax Scams)
+I’m Zynthera (aka @Xploit.ninja), a shadow operative mastering the art of code, markets, and strategy. I navigate the digital underworld, exploiting systems and seizing opportunities while remaining unseen.
+
+
+
+
+
+🧠 Hacking: Elite in penetration testing, bug bounties, and stealth automation.
+
+
+
+💻 Development: Crafting secure, high-impact systems.
+
+
+
+⚙️ Trading: Dominating crypto and forex markets.
+
+
+
+🧨 Focus: Cybersecurity, business dominance, and private operations.
+
+
+
+🧠 Philosophy
+
+Mindset:  No limits.
+Vision:   Billionaire mission.
+Purpose:  Create. Lead. Impact.
+Focus:    Profit. Power. Persistence.
+Spirit:   Unstoppable.
+
+
+
+🧩 Tech Arsenal
+
+
+
+
+
+Advanced PenTesting & Red Team
+
+
+
+Bug Bounty, Payload, & Automation
+
+
+
+Malware/Virus Dev, custom threads, obfuscation
+
+
+
+Crypto & Foreign Trading domination
+
+
+
+🔐 Security Notice
+
+
+
+
+
+Full front-end protection enabled
+
+
+
+Anti-copy + content guard active
+
+
+
+Java-based protections added
+
+
+
+Auto-play music (MP3 hosted via Lovable.dev)
+
+
+
+Supabase DB integrated
+
+
+
+Full device/resolution compatibility: phones, desktops, terminals
+
+
+
+📡 Network Presence
+
+
+
+
+
+📊 Stats & Trophies
+
+
+
+
+
+
+
+🧬 Final Note
+
+
+
+“This isn’t just code. This is war strategy in motion.”
+— Zynthera
