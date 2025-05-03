@@ -63,6 +63,15 @@ export function SkillsSection() {
       duration: 300,
       easing: 'easeOutQuad'
     });
+    
+    // Add glitch effect to title on hover
+    const titleElement = e.currentTarget.querySelector('h3');
+    if (titleElement) {
+      titleElement.classList.add('glitching');
+      setTimeout(() => {
+        titleElement.classList.remove('glitching');
+      }, 300);
+    }
   }
 
   function handleCardLeave(e: React.MouseEvent<HTMLDivElement>) {
@@ -77,7 +86,7 @@ export function SkillsSection() {
   return (
     <section id="skills" className="py-16 px-4">
       <div className="max-w-5xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-gothic mb-10 text-hacker-green">Skills</h2>
+        <h2 className="text-3xl md:text-4xl font-gothic mb-10 text-hacker-green glitch-random">Skills</h2>
         
         {loading ? (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -90,7 +99,7 @@ export function SkillsSection() {
             {skills.map((skill, index) => (
               <div
                 key={skill.id}
-                className="border border-hacker-green bg-gradient-to-b from-[rgba(0,255,0,0.05)] to-transparent p-5 rounded relative overflow-hidden opacity-0 animate-fade-in"
+                className="border border-hacker-green bg-gradient-to-b from-[rgba(0,255,0,0.05)] to-transparent p-5 rounded relative overflow-hidden opacity-0 animate-fade-in lens-effect"
                 style={{ animationDelay: `${index * 100}ms` }}
                 onMouseEnter={handleCardHover}
                 onMouseLeave={handleCardLeave}
@@ -114,6 +123,12 @@ export function SkillsSection() {
                   <div className="text-xs font-mono text-hacker-green opacity-50">
                     {`[STATUS: ACTIVE]`}
                   </div>
+                </div>
+                
+                {/* Interactive elements that appear on hover */}
+                <div className="absolute inset-0 bg-gradient-to-b from-hacker-black to-transparent opacity-0 hover:opacity-20 transition-opacity duration-300"></div>
+                <div className="absolute bottom-2 right-2 text-xs font-mono text-hacker-red opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  [SECURE]
                 </div>
               </div>
             ))}

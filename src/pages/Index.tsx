@@ -1,5 +1,5 @@
 
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
 import barba from '@barba/core';
 import anime from 'animejs';
 import { NavBar } from '@/components/NavBar';
@@ -9,6 +9,8 @@ import { SkillsSection } from '@/components/SkillsSection';
 import { FooterSection } from '@/components/FooterSection';
 
 const Index = () => {
+  const pageRef = useRef<HTMLDivElement>(null);
+  
   useEffect(() => {
     // Initialize anime.js animations and scroll effects
     const observer = new IntersectionObserver((entries) => {
@@ -31,6 +33,38 @@ const Index = () => {
     document.querySelectorAll('section').forEach(section => {
       observer.observe(section);
     });
+
+    // Apply lens distortion effect to images and cards
+    if (window.lens) {
+      setTimeout(() => {
+        const lensElements = document.querySelectorAll('.lens-effect');
+        lensElements.forEach(el => {
+          window.lens.init(el, {
+            radius: 80,
+            intensity: 0.25,
+            speedIn: 0.8,
+            speedOut: 0.8
+          });
+        });
+      }, 1000);
+    } else {
+      // Dynamically load lens.js if not available
+      const script = document.createElement('script');
+      script.src = 'https://unpkg.com/lens.js@latest/dist/lens.umd.js';
+      script.async = true;
+      script.onload = () => {
+        const lensElements = document.querySelectorAll('.lens-effect');
+        lensElements.forEach(el => {
+          window.lens.init(el, {
+            radius: 80,
+            intensity: 0.25,
+            speedIn: 0.8,
+            speedOut: 0.8
+          });
+        });
+      };
+      document.body.appendChild(script);
+    }
 
     // We'll initialize barba.js only if we have the required wrapper
     // This prevents errors if the barba data-attribute isn't present
@@ -63,6 +97,42 @@ const Index = () => {
       }
     }
 
+    // Random glitch effect on elements with glitch-random class
+    const glitchRandomElements = document.querySelectorAll('.glitch-random');
+    
+    const triggerRandomGlitch = () => {
+      const randomEl = glitchRandomElements[Math.floor(Math.random() * glitchRandomElements.length)];
+      if (randomEl) {
+        randomEl.classList.add('glitching');
+        setTimeout(() => {
+          randomEl.classList.remove('glitching');
+        }, 200 + Math.random() * 400);
+      }
+      
+      setTimeout(triggerRandomGlitch, 2000 + Math.random() * 4000);
+    };
+    
+    if (glitchRandomElements.length > 0) {
+      triggerRandomGlitch();
+    }
+
+    // Add data corruption visual effect
+    if (pageRef.current) {
+      const corruptionEffect = () => {
+        const corruptionOverlay = document.createElement('div');
+        corruptionOverlay.className = 'corruption-overlay';
+        pageRef.current?.appendChild(corruptionOverlay);
+        
+        setTimeout(() => {
+          corruptionOverlay.remove();
+        }, 150);
+        
+        setTimeout(corruptionEffect, 7000 + Math.random() * 10000);
+      };
+      
+      setTimeout(corruptionEffect, 5000);
+    }
+
     // Cleanup
     return () => {
       observer.disconnect();
@@ -70,11 +140,12 @@ const Index = () => {
   }, []);
 
   return (
-    <div className="bg-hacker-black min-h-screen" data-barba="wrapper">
+    <div ref={pageRef} className="bg-hacker-black min-h-screen overflow-hidden" data-barba="wrapper">
       {/* Scanline effect overlay */}
       <div className="fixed inset-0 z-[1] pointer-events-none">
         <div className="absolute inset-0 bg-[url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAACCAYAAACZgbYnAAAAEklEQVQImWNgYGD4z8Dc3MwAARgAJ04V65YAAAAASUVORK5CYII=')] opacity-[0.03]"></div>
         <div className="scanline"></div>
+        <div className="noise"></div>
       </div>
       
       <div data-barba="container" data-barba-namespace="home">

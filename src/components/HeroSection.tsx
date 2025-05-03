@@ -23,18 +23,68 @@ export function HeroSection() {
         duration: 800,
         easing: 'easeInOutQuad'
       });
+      
+      // Add matrix digital rain effect to the background
+      const canvas = document.createElement('canvas');
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+      canvas.className = 'absolute inset-0 z-[-1] opacity-10';
+      
+      heroRef.current.appendChild(canvas);
+      
+      const ctx = canvas.getContext('2d');
+      const characters = 'アイウエオカキクケコサシスセソタチツテトナニヌネノハヒフヘホマミムメモヤユヨラリルレロワヲン0123456789';
+      const columns = Math.floor(canvas.width / 20);
+      const drops: number[] = [];
+      
+      // Initialize drops
+      for (let i = 0; i < columns; i++) {
+        drops[i] = 1;
+      }
+      
+      function draw() {
+        if (!ctx) return;
+        
+        // Semi-transparent black to leave trails
+        ctx.fillStyle = 'rgba(0, 0, 0, 0.05)';
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+        
+        ctx.fillStyle = '#00FF00';
+        ctx.font = '15px monospace';
+        
+        // Loop through drops
+        for (let i = 0; i < drops.length; i++) {
+          // Random character
+          const text = characters[Math.floor(Math.random() * characters.length)];
+          
+          // Draw the character
+          ctx.fillText(text, i * 20, drops[i] * 20);
+          
+          // Send it to the top when it reaches the bottom
+          // or random reset for some columns
+          if (drops[i] * 20 > canvas.height || Math.random() > 0.975) {
+            drops[i] = 0;
+          }
+          
+          // Increment y coordinate
+          drops[i]++;
+        }
+      }
+      
+      const matrixInterval = setInterval(draw, 35);
+      
+      return () => {
+        clearInterval(matrixInterval);
+        anime.remove(heroRef.current);
+      };
     }
-
-    return () => {
-      anime.remove(heroRef.current);
-    };
   }, []);
 
   return (
     <section id="hero" className="min-h-screen flex flex-col items-center justify-center relative px-4 py-16">
       <div className="scanline"></div>
-      <div ref={heroRef} className="max-w-3xl mx-auto text-center opacity-0">
-        <h1 className="text-4xl md:text-6xl font-gothic mb-8 text-hacker-green">
+      <div ref={heroRef} className="max-w-3xl mx-auto text-center opacity-0 relative z-10">
+        <h1 className="text-4xl md:text-6xl font-gothic mb-8 text-hacker-green glitch-random">
           <GlitchText text="𝑰'𝒎 𝒏𝒐𝒕 𝒔𝒑𝒆𝒄𝒊𝒂𝒍. 𝑰'𝒎 𝒍𝒊𝒎𝒊𝒕𝒆𝒅 𝒆𝒅𝒊𝒕𝒊𝒐𝒏." />
         </h1>
         
@@ -51,9 +101,10 @@ export function HeroSection() {
           ))}
         </div>
         
-        <div className="mt-16 opacity-0 animate-fade-in" style={{ animationDelay: '3000ms' }}>
-          <span className="inline-block px-4 py-2 border border-hacker-red text-hacker-red hover:bg-hacker-red hover:text-hacker-black transition-colors duration-300 cursor-pointer">
-            [ACCESS_PROFILE]
+        <div className="mt-16 opacity-0 animate-fade-in lens-effect" style={{ animationDelay: '3000ms' }}>
+          <span className="inline-block px-4 py-2 border border-hacker-red text-hacker-red hover:bg-hacker-red hover:text-hacker-black transition-colors duration-300 cursor-pointer relative overflow-hidden group">
+            <span className="relative z-10">[ACCESS_PROFILE]</span>
+            <span className="absolute inset-0 bg-hacker-red origin-left transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
           </span>
         </div>
       </div>
