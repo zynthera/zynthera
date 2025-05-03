@@ -30,7 +30,7 @@
 → Penetration Testing      → Bug Hunting
 → Malware/Virus Dev        → Threat Automation
 → Crypto/Forex Trading     → High-Stakes Business
-→ No Indian Trade (Tax Scams)```
+→ No Indian Trade (Tax Scams) ```
 
 
 ### 🚨 Notice
@@ -44,4 +44,4 @@ Copy attempt = 😈
 📊 GitHub Stats (Dark Hacker Theme)
 <p align="center"> <img src="https://github-readme-stats.vercel.app/api?username=zynthera&theme=tokyonight&show_icons=true&hide_border=true" width="49%" /> <img src="https://github-readme-streak-stats.herokuapp.com?user=zynthera&theme=tokyonight&hide_border=true" width="49%" /> </p>
 <p align="center"> <img src="https://github-profile-trophy.vercel.app/?username=zynthera&theme=matrix&no-bg=true&margin-w=15" /> </p>
-<p align="center"> <i>Respect the grind. Respect the code. Respect the unknown.</i><br> <b>– zynthera</b> 😈 </p> ```
+<p align="center"> <i>Respect the grind. Respect the code. Respect the unknown.</i><br> <b>– zynthera</b> 😈 </p>
