@@ -1,6 +1,6 @@
 <!-- Banner (optional: custom host or use image generator) -->
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=22&pause=1000&color=00FF00&center=true&vCenter=true&multiline=true&width=600&height=80&lines=%F0%9F%9A%80+I%E2%80%99m+not+special.;I%E2%80%99m+limited+edition." alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=22&pause=100&color=00FF00&center=true&vCenter=true&multiline=true&width=600&height=80&lines=%F0%9F%9A%80+I%E2%80%99m+not+special.;I%E2%80%99m+limited+edition." alt="Typing SVG" />
 </p>
 
 <h1 align="center" style="font-family: JetBrains Mono;">
@@ -31,7 +31,7 @@
 → Penetration Testing      → Bug Hunting
 → Malware/Virus Dev        → Threat Automation
 → Crypto/Forex Trading     → High-Stakes Business
-→ No Indian Trade (Tax Scams) ```
+→ No Indian Trade (Tax Scams) '''
 
 ---
 
