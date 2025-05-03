@@ -10,30 +10,7 @@ import { FooterSection } from '@/components/FooterSection';
 
 const Index = () => {
   useEffect(() => {
-    // Barba.js initialization
-    barba.init({
-      transitions: [{
-        name: 'opacity-transition',
-        leave(data) {
-          return anime({
-            targets: data.current.container,
-            opacity: 0,
-            duration: 300,
-            easing: 'easeInQuad'
-          }).finished;
-        },
-        enter(data) {
-          return anime({
-            targets: data.next.container,
-            opacity: [0, 1],
-            duration: 300,
-            easing: 'easeOutQuad'
-          }).finished;
-        }
-      }]
-    });
-
-    // Initialize glitch effects on scroll
+    // Initialize anime.js animations and scroll effects
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -55,6 +32,37 @@ const Index = () => {
       observer.observe(section);
     });
 
+    // We'll initialize barba.js only if we have the required wrapper
+    // This prevents errors if the barba data-attribute isn't present
+    const barbaWrapper = document.querySelector('[data-barba="wrapper"]');
+    if (barbaWrapper) {
+      try {
+        barba.init({
+          transitions: [{
+            name: 'opacity-transition',
+            leave(data) {
+              return anime({
+                targets: data.current.container,
+                opacity: 0,
+                duration: 300,
+                easing: 'easeInQuad'
+              }).finished;
+            },
+            enter(data) {
+              return anime({
+                targets: data.next.container,
+                opacity: [0, 1],
+                duration: 300,
+                easing: 'easeOutQuad'
+              }).finished;
+            }
+          }]
+        });
+      } catch (error) {
+        console.error("Barba.js initialization error:", error);
+      }
+    }
+
     // Cleanup
     return () => {
       observer.disconnect();
@@ -62,22 +70,24 @@ const Index = () => {
   }, []);
 
   return (
-    <div className="bg-hacker-black min-h-screen">
+    <div className="bg-hacker-black min-h-screen" data-barba="wrapper">
       {/* Scanline effect overlay */}
       <div className="fixed inset-0 z-[1] pointer-events-none">
         <div className="absolute inset-0 bg-[url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAACCAYAAACZgbYnAAAAEklEQVQImWNgYGD4z8Dc3MwAARgAJ04V65YAAAAASUVORK5CYII=')] opacity-[0.03]"></div>
         <div className="scanline"></div>
       </div>
       
-      <NavBar />
-      
-      <main className="relative z-[5]">
-        <HeroSection />
-        <TimelineSection />
-        <SkillsSection />
-      </main>
-      
-      <FooterSection />
+      <div data-barba="container" data-barba-namespace="home">
+        <NavBar />
+        
+        <main className="relative z-[5]">
+          <HeroSection />
+          <TimelineSection />
+          <SkillsSection />
+        </main>
+        
+        <FooterSection />
+      </div>
     </div>
   );
 };
