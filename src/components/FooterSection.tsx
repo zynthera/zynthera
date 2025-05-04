@@ -45,7 +45,7 @@ export function FooterSection() {
         
         <div className="mt-8 pt-6 border-t border-hacker-green border-opacity-20 text-center">
           <p className="text-xs text-hacker-green opacity-50 font-mono">
-            {'// SYSTEM ACCESS: RESTRICTED // CLEARANCE LEVEL: OMEGA //'}
+            {'// SYSTEM ACCESS: RESTRICTED // CLEARANCE LEVEL: OMEGA Legend//'}
           </p>
         </div>
       </div>
