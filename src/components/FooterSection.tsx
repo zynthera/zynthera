@@ -32,7 +32,7 @@ export function FooterSection() {
               <Instagram size={24} />
             </a>
             <a 
-              href="https://youtube.com/@zynthera" 
+              href="https://www.youtube.com/@XploitNinja" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-hacker-green hover:text-hacker-red transition-colors duration-300"
