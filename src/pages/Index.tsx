@@ -1,4 +1,3 @@
-
 import React, { useEffect, useRef } from 'react';
 import barba from '@barba/core';
 import anime from 'animejs';
@@ -108,74 +107,18 @@ const Index = () => {
           }]
         });
       } catch (error) {
-        console.error("Barba.js initialization error:", error);
+        console.error("Error initializing Barba.js:", error);
       }
     }
-
-    // Random glitch effect on elements with glitch-random class
-    const glitchRandomElements = document.querySelectorAll('.glitch-random');
-    
-    const triggerRandomGlitch = () => {
-      const randomEl = glitchRandomElements[Math.floor(Math.random() * glitchRandomElements.length)];
-      if (randomEl) {
-        randomEl.classList.add('glitching');
-        setTimeout(() => {
-          randomEl.classList.remove('glitching');
-        }, 200 + Math.random() * 400);
-      }
-      
-      setTimeout(triggerRandomGlitch, 2000 + Math.random() * 4000);
-    };
-    
-    if (glitchRandomElements.length > 0) {
-      triggerRandomGlitch();
-    }
-
-    // Add data corruption visual effect
-    if (pageRef.current) {
-      const corruptionEffect = () => {
-        const corruptionOverlay = document.createElement('div');
-        corruptionOverlay.className = 'corruption-overlay';
-        pageRef.current?.appendChild(corruptionOverlay);
-        
-        setTimeout(() => {
-          corruptionOverlay.remove();
-        }, 150);
-        
-        setTimeout(corruptionEffect, 7000 + Math.random() * 10000);
-      };
-      
-      setTimeout(corruptionEffect, 5000);
-    }
-
-    // Cleanup
-    return () => {
-      observer.disconnect();
-    };
   }, []);
 
   return (
-    <div ref={pageRef} className="bg-hacker-black min-h-screen overflow-hidden" data-barba="wrapper">
-      {/* Scanline effect overlay */}
-      <div className="fixed inset-0 z-[1] pointer-events-none">
-        <div className="absolute inset-0 bg-[url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAACCAYAAACZgbYnAAAAEklEQVQImWNgYGD4z8Dc3MwAARgAJ04V65YAAAAASUVORK5CYII=')] opacity-[0.03]"></div>
-        <div className="scanline"></div>
-        <div className="noise"></div>
-      </div>
-      
-      <div data-barba="container" data-barba-namespace="home">
-        <NavBar />
-        
-        <main className="relative z-[5]">
-          <HeroSection />
-          <TimelineSection />
-          <SkillsSection />
-        </main>
-        
-        <FooterSection />
-      </div>
-
-      {/* Audio player with play/pause toggle */}
+    <div ref={pageRef}>
+      <NavBar />
+      <HeroSection />
+      <TimelineSection />
+      <SkillsSection />
+      <FooterSection />
       <AudioPlayer />
     </div>
   );
