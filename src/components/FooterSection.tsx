@@ -1,7 +1,18 @@
-
 import React from 'react';
 import { GlitchText } from './GlitchText';
-import { Github, Instagram, Youtube, Telegram } from 'lucide-react';
+import { Github, Instagram, Youtube } from 'lucide-react';
+
+const TelegramIcon = () => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 24 24"
+    fill="currentColor"
+    width="24"
+    height="24"
+  >
+    <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.09 8.783l-1.25 5.881c-.094.422-.338.53-.684.33l-1.887-1.406-1.024.984c-.113.111-.211.211-.43.211l.154-2.184 3.968-3.586c.172-.154-.037-.241-.265-.087l-4.9 3.085-2.105-.657c-.457-.142-.467-.457.096-.677l8.204-3.165c.338-.13.63.082.524.53z" />
+  </svg>
+);
 
 export function FooterSection() {
   return (
@@ -47,7 +58,7 @@ export function FooterSection() {
               className="text-hacker-green hover:text-hacker-red transition-colors duration-300"
               aria-label="Telegram"
             >
-              <Telegram size={24} />
+              <TelegramIcon />
             </a>
           </div>
         </div>
