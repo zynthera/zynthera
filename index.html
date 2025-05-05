@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -12,7 +11,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta http-equiv="X-Content-Type-Options" content="nosniff" />
     <meta http-equiv="X-Frame-Options" content="DENY" />
-    <meta http-equiv="X-XSS-Protection" content="1; mode=block" />
+    <!-- Content Security Policy -->
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; img-src 'self' https://*; script-src 'self' https://cdn.gpteng.co; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;"
+    />
 
     <!-- Open Graph meta tags -->
     <meta property="og:title" content="Zynthera | Hacker | Entrepreneur | Trader" />
@@ -29,23 +32,30 @@
     <meta name="twitter:image" content="https://github.com/zynthera/zynthera/raw/master/public/hh.png" />
 
     <!-- Preload fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Pirata+One&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Pirata+One&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
-    <div id="root"></div>
+    <div id="root" role="main" aria-label="Main Content Area"></div>
     <!-- Lovable script tag for new features -->
-    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
+    <script defer src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
     <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
-    <script type="module" src="/src/main.tsx"></script>
+    <script defer type="module" src="/src/main.tsx"></script>
     <script>
       // Prevent iframe embedding
-      if (window.top !== window.self) {
-        window.top.location.replace(window.self.location.href);
+      try {
+        if (window.top !== window.self) {
+          window.top.location.replace(window.self.location.href);
+        }
+      } catch (error) {
+        console.error('Error preventing iframe embedding:', error);
       }
     </script>
   </body>
-</html>
+  </html>
