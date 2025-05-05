@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -6,6 +7,12 @@
     <title>Zynthera | Hacker | Entrepreneur | Trader</title>
     <meta name="description" content="Elite hacker, trader, and entrepreneur portfolio" />
     <meta name="author" content="Zynthera" />
+
+    <!-- Security headers -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta http-equiv="X-Frame-Options" content="DENY" />
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block" />
 
     <!-- Open Graph meta tags -->
     <meta property="og:title" content="Zynthera | Hacker | Entrepreneur | Trader" />
@@ -32,5 +39,11 @@
     <div id="root"></div>
     <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
     <script type="module" src="/src/main.tsx"></script>
+    <script>
+      // Prevent iframe embedding
+      if (window.top !== window.self) {
+        window.top.location.replace(window.self.location.href);
+      }
+    </script>
   </body>
-  </html>
+</html>
