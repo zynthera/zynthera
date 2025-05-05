@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { GlitchText } from './GlitchText';
-import { Github, Instagram, Youtube } from 'lucide-react';
+import { Github, Instagram, Youtube, Telegram } from 'lucide-react';
 
 export function FooterSection() {
   return (
@@ -39,6 +39,15 @@ export function FooterSection() {
               aria-label="YouTube"
             >
               <Youtube size={24} />
+            </a>
+            <a 
+              href="https://t.me/xploitninjaofficial" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-hacker-green hover:text-hacker-red transition-colors duration-300"
+              aria-label="Telegram"
+            >
+              <Telegram size={24} />
             </a>
           </div>
         </div>
