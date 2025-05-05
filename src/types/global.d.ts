@@ -1,16 +1,20 @@
 
 declare module 'animejs';
 declare module '@barba/core';
-declare module 'lens.js';
+
+// Lens.js type definition
+interface LensOptions {
+  radius?: number;
+  intensity?: number;
+  speedIn?: number;
+  speedOut?: number;
+}
+
+interface Lens {
+  init: (element: HTMLElement | Element, options?: LensOptions) => void;
+}
 
 // Additional type augmentation for libraries with partial types
 interface Window {
-  lens?: {
-    init: (element: HTMLElement | Element, options?: {
-      radius?: number;
-      intensity?: number;
-      speedIn?: number;
-      speedOut?: number;
-    }) => void;
-  };
+  lens?: Lens;
 }

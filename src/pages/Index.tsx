@@ -36,43 +36,50 @@ const Index = () => {
     });
 
     // Apply lens distortion effect to images and cards
-    const initLensEffect = () => {
-      if (typeof window.lens !== 'undefined') {
-        const lensElements = document.querySelectorAll('.lens-effect');
-        lensElements.forEach(el => {
-          if (el instanceof HTMLElement) {
-            window.lens?.init(el, {
-              radius: 80,
-              intensity: 0.25,
-              speedIn: 0.8,
-              speedOut: 0.8
-            });
+    const loadLensEffect = () => {
+      // Check if lens object exists in window
+      if (typeof window.lens === 'undefined') {
+        // Define a simple fallback lens effect if the library fails to load
+        window.lens = {
+          init: (el, options) => {
+            if (el instanceof HTMLElement) {
+              el.addEventListener('mouseenter', () => {
+                el.style.transform = 'scale(1.05)';
+              });
+              el.addEventListener('mouseleave', () => {
+                el.style.transform = 'scale(1)';
+              });
+            }
           }
-        });
+        };
       }
+      
+      // Apply lens effect to elements
+      const lensElements = document.querySelectorAll('.lens-effect');
+      lensElements.forEach(el => {
+        if (el instanceof HTMLElement) {
+          window.lens.init(el, {
+            radius: 80,
+            intensity: 0.25,
+            speedIn: 0.8,
+            speedOut: 0.8
+          });
+        }
+      });
     };
-
-    // Load lens.js dynamically
-    const loadLensScript = () => {
-      const script = document.createElement('script');
-      script.src = 'https://unpkg.com/lens.js@latest/dist/lens.umd.js';
-      script.async = true;
-      script.onload = () => {
-        // Wait a bit for the script to initialize
-        setTimeout(initLensEffect, 300);
-      };
-      script.onerror = (error) => {
-        console.error("Failed to load lens.js:", error);
-      };
-      document.body.appendChild(script);
+    
+    // Load lens.js script with error handling
+    const script = document.createElement('script');
+    script.src = 'https://cdn.jsdelivr.net/npm/lens.js@1.0.0/dist/lens.min.js';
+    script.async = true;
+    script.onload = () => {
+      setTimeout(loadLensEffect, 300);
     };
-
-    // Check if lens.js is already loaded
-    if (typeof window.lens !== 'undefined') {
-      initLensEffect();
-    } else {
-      loadLensScript();
-    }
+    script.onerror = () => {
+      console.warn('Lens.js failed to load, using fallback effect');
+      loadLensEffect(); // Use fallback if script fails to load
+    };
+    document.body.appendChild(script);
 
     // We'll initialize barba.js only if we have the required wrapper
     // This prevents errors if the barba data-attribute isn't present
