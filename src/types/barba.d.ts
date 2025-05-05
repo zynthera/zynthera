@@ -1,4 +1,3 @@
-
 declare module '@barba/core' {
   interface BarbaTransitionData {
     current: {
