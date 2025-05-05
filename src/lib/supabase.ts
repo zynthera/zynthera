@@ -1,4 +1,3 @@
-
 import { createClient } from '@supabase/supabase-js';
 
 // These are public keys, safe to be in the frontend
