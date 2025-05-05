@@ -6,22 +6,30 @@
     <title>Zynthera | Hacker | Entrepreneur | Trader</title>
     <meta name="description" content="Elite hacker, trader, and entrepreneur portfolio" />
     <meta name="author" content="Zynthera" />
+    <meta name="robots" content="index, follow" />
 
     <!-- Security headers -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta http-equiv="X-Content-Type-Options" content="nosniff" />
     <meta http-equiv="X-Frame-Options" content="DENY" />
-    <!-- Content Security Policy -->
     <meta
       http-equiv="Content-Security-Policy"
-      content="default-src 'self'; img-src 'self' https://*; script-src 'self' https://cdn.gpteng.co; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;"
+      content="
+        default-src 'self';
+        img-src 'self' https://*;
+        script-src 'self' https://cdn.gpteng.co 'sha256-xyz...'; 
+        style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
+        font-src https://fonts.gstatic.com;
+        connect-src 'self';
+        frame-ancestors 'none';
+      "
     />
 
     <!-- Open Graph meta tags -->
     <meta property="og:title" content="Zynthera | Hacker | Entrepreneur | Trader" />
     <meta property="og:description" content="Elite hacker, trader, and entrepreneur portfolio" />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://github.com/zynthera/zynthera/raw/master/public/hh.png" />
+    <meta property="og:image" content="https://cdn.example.com/public/hh.png" />
     <meta property="og:site_name" content="Zynthera" />
     <meta property="og:url" content="https://zynthera.vercel.app" />
 
@@ -29,22 +37,35 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Zynthera | Hacker | Entrepreneur | Trader" />
     <meta name="twitter:description" content="Elite hacker, trader, and entrepreneur portfolio" />
-    <meta name="twitter:image" content="https://github.com/zynthera/zynthera/raw/master/public/hh.png" />
+    <meta name="twitter:image" content="https://cdn.example.com/public/hh.png" />
 
     <!-- Preload fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Pirata+One&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pirata+One&display=swap"
+      rel="stylesheet"
+      integrity="sha384-abc123..."
+      crossorigin="anonymous"
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&display=swap"
       rel="stylesheet"
+      integrity="sha384-xyz456..."
+      crossorigin="anonymous"
     />
   </head>
 
   <body>
     <div id="root" role="main" aria-label="Main Content Area"></div>
     <!-- Lovable script tag for new features -->
-    <script defer src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
+    <script
+      defer
+      src="https://cdn.gpteng.co/gptengineer.js"
+      type="module"
+      integrity="sha384-xyz789..."
+      crossorigin="anonymous"
+    ></script>
     <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
     <script defer type="module" src="/src/main.tsx"></script>
     <script>
@@ -58,4 +79,4 @@
       }
     </script>
   </body>
-  </html>
+      </html>
