@@ -7,23 +7,13 @@
     <meta name="description" content="Elite hacker, trader, and entrepreneur portfolio" />
     <meta name="author" content="Zynthera" />
 
-    <!-- Security headers -->
-    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
-    <meta http-equiv="X-Frame-Options" content="DENY" />
-    <meta name="referrer" content="no-referrer" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      http-equiv="Content-Security-Policy"
-      content="default-src 'self'; img-src 'self' https://github.com https://zynthera.vercel.app; font-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com; script-src 'self' https://cdn.gpteng.co; style-src 'self' https://fonts.googleapis.com; connect-src 'self'; frame-ancestors 'none';"
-    />
-
     <!-- Open Graph meta tags -->
     <meta property="og:title" content="Zynthera | Hacker | Entrepreneur | Trader" />
     <meta property="og:description" content="Elite hacker, trader, and entrepreneur portfolio" />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="https://github.com/zynthera/zynthera/raw/master/public/hh.png" />
     <meta property="og:site_name" content="Zynthera" />
-    <meta property="og:url" content="https://github.com/zynthera/zynthera/raw/master/public/hh.png" />
+    <meta property="og:url" content="https://zynthera.vercel.app" />
 
     <!-- Twitter meta tags -->
     <meta name="twitter:card" content="summary_large_image" />
@@ -32,40 +22,16 @@
     <meta name="twitter:image" content="https://github.com/zynthera/zynthera/raw/master/public/hh.png" />
 
     <!-- Preload fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      rel="preload"
-      href="https://fonts.googleapis.com/css2?family=Pirata+One&display=swap"
-      as="style"
-    />
-    <link
-      rel="preload"
-      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&display=swap"
-      as="style"
-    />
-    <link href="https://fonts.googleapis.com/css2?family=Pirata+One&display=swap" rel="stylesheet" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pirata+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&display=swap" rel="stylesheet">
   </head>
 
   <body>
     <div id="root"></div>
-    <!-- Lovable script tag for new features -->
-    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
     <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
+    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
     <script type="module" src="/src/main.tsx"></script>
-    <script>
-      "use strict";
-      // Prevent iframe embedding
-      if (window.top !== window.self) {
-        window.top.location.replace(window.self.location.href);
-      }
-
-      // Log confirmation for production
-      console.log("Zynthera production-ready deployment initialized.");
-    </script>
   </body>
-  </html>
+</html>
