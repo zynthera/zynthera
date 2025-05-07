@@ -77,11 +77,11 @@ I’m **Zynthera** (aka [@xploit.ninja](https://instagram.com/xploit.ninja)) —
 
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=zynthera&theme=tokyonight&show_icons=true" width="48%" />
-  <img src="https://github-readme-streak-stats.herokuapp.com?user=zynthera&theme=tokyonight" width="48%" />
+  <img src="https://github-readme-streak-stats.herokuapp.com?user=zynthera&theme=tokyonight" width="50%" />
 </p>
 
 <p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=zynthera&theme=matrix&no-bg=true&margin-w=15" />
+  <img src="https://github-profile-trophy.vercel.app/?username=zynthera&theme=matrix&no-bg=true&margin-w=20" />
 </p>
 
 ---
