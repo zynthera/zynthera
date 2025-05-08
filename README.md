@@ -81,7 +81,7 @@ I’m **Zynthera** (aka [@xploit.ninja](https://instagram.com/xploit.ninja)) —
 </p>
 
 <p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=zynthera&theme=matrix&no-bg=true&margin-w=20" />
+  <img src="https://github-profile-trophy.vercel.app/?username=zynthera&theme=matrix&no-bg=true&margin-w=14" />
 </p>
 
 ---
