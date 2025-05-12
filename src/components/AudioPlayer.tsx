@@ -10,6 +10,7 @@ export const AudioPlayer = () => {
 
   useEffect(() => {
     // Create audio element
+    const audio = new Audio('/audio/backgrounds.mp3');
     const audio = new Audio('/audio/background.mp3');
     audio.loop = true;
     audio.muted = isMuted;
