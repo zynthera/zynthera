@@ -68,7 +68,7 @@ I’m **Zynthera** (aka [@xploit.ninja](https://instagram.com/xploit.ninja)) —
 |--------------|--------|
 | 🧠 GitHub     | [@zynthera](https://github.com/zynthera) |
 | 📸 Instagram  | [@xploit.ninja](https://instagram.com/xploit.ninja) |
-| 📡 Telegram   | *(Coming Soon)*|
+| 📡 Personal Telegram Bot | .[@bharathacker_reminder_bot] (https://t.me/@bharathacker_reminder_bot)|
 | 🎥 YouTube    | [@XploitNinja](https://www.youtube.com/@XploitNinja)|
 
 ---
