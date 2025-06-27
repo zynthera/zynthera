@@ -1,7 +1,6 @@
-
 <!-- Dynamic SVG Banner -->
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&pause=1000&color=00FF00&width=435&lines=Welcome+to+Zynthera's+World;Hacker+%7C+Trader+%7C+Entrepreneur" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&pause=1000&color=00FF00&width=435&lines=Welcome+to+Zynthera's+World;Hacker+%7C+Trader+%7C+Entrepreneur" alt="Typing [...]
 </p>
 
 <h1 align="center">🚀 I’m not special. I’m <i>limited edition</i>.</h1>
@@ -93,3 +92,4 @@ I’m **Zynthera** (aka [@xploit.ninja](https://instagram.com/xploit.ninja)) —
 > “This isn’t just code. This is war strategy in motion.”  
 > — **Zynthera** 😈
 
+```
